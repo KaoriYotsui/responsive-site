@@ -21,9 +21,12 @@ a {
   a:active {
     color: #d05f36; }
 
-.cover_image {
-  height: auto;
-  width: 100%; }
+.cover {
+  background-image: url("https://techacademy-webdesign-kaoriyotsui.c9users.io/responsive-site/images/cover_image.jpg");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
 
 .title_box {
   width: 40%;
@@ -91,11 +94,9 @@ footer {
   .cover {
     height: 400px;
     width: 100%;
-    background-image: url(https://techacademy-webdesign-kaoriyotsui.c9users.io/responsive-site/images/cover_image.jpg);
+    background-image: url("https://techacademy-webdesign-kaoriyotsui.c9users.io/responsive-site/images/cover_image.jpg");
     background-size: cover;
-    background-position: center center; }
-    .cover .cover_image {
-      display: none; } }
+    background-position: center center; } }
 @media (max-width: 768px) {
   .situaition {
     flex-direction: column; }
