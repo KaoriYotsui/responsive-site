@@ -1,0 +1,141 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+$baseFontFamily:"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+
+ //colors
+$baseColor: #fdfcf6;
+$keyColor: #c0542d;
+$subColor: #333000;
+$fontColor: #4c4c4c;
+ 
+//Base
+html{ font-size: 62.5%;}
+
+body{
+     color: $fontColor;
+     font-size: 1.4rem;
+     font-family:$baseFontFamily;
+     line-height:1.6;
+     letter-spacing: 0.1em;
+     background-color: $baseColor;
+ }
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+ 
+//header
+
+.cover_image{
+        height:auto;
+        width:100%;
+}
+ 
+ .title_box{
+     width: 40%;
+     margin-left: auto;
+     margin-right: auto;
+         .title_text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: normal;
+    span {
+      display: block;
+      font-size: 3rem;
+      color: $keyColor;
+     
+        }
+     }
+   }
+
+ //main
+ 
+ .situaition{
+     display: flex;
+     flex-direction: row;
+     height:auto;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     background-color: $keyColor;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-right: 10px;
+     padding-left: 10px;
+    
+ }
+ 
+ 
+ .situaition_box{
+     width: 33.3333%;
+     height: auto;
+     background-color: lighten($baseColor, 10%);
+     margin: 10px;
+     flex: 1;
+     padding: 15px;
+     border-radius: 30px;
+      h2{
+        color: $keyColor;
+        text-align: center;
+      hr{
+          border: dotted;
+          color: $keyColor;
+      }
+    }
+ }
+
+.contact{
+    text-align: center;
+     a{
+      font-size: 2rem;
+      display: block;
+      width: 100px;
+      height: 35px;
+      color: #FFF;
+      background-color: $fontColor;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      padding-top: auto;
+      padding-bottom: auto;
+     }    
+    }
+
+
+//footer
+footer {
+  margin-top: 30px;
+  background-color: $keyColor;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF;
+}
+
+
+//mobile
+@media(max-width: 768px) {
+    .cover{
+        height: 400px;
+        width: 100%;
+        background-image: url(https://techacademy-webdesign-kaoriyotsui.c9users.io/responsive-site/images/cover_image.jpg);
+        background-size: cover;
+        background-position: center center;
+        .cover_image{
+            display: none;
+        }
+    }
+}
+
+ @media (max-width: 768px){
+     .situaition{
+        flex-direction: column;
+        .situaition_box{
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+    }
+ }
+

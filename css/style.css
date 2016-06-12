@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #c0542d;
+  text-decoration: none; }
+  a:visited {
+    color: #974223; }
+  a:hover {
+    color: #974223; }
+  a:active {
+    color: #d05f36; }
+
+.cover_image {
+  height: auto;
+  width: 100%; }
+
+.title_box {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto; }
+  .title_box .title_text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: normal; }
+    .title_box .title_text span {
+      display: block;
+      font-size: 3rem;
+      color: #c0542d; }
+
+.situaition {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #c0542d;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.situaition_box {
+  width: 33.3333%;
+  height: auto;
+  background-color: white;
+  margin: 10px;
+  flex: 1;
+  padding: 15px;
+  border-radius: 30px; }
+  .situaition_box h2 {
+    color: #c0542d;
+    text-align: center; }
+    .situaition_box h2 hr {
+      border: dotted;
+      color: #c0542d; }
+
+.contact {
+  text-align: center; }
+  .contact a {
+    font-size: 2rem;
+    display: block;
+    width: 100px;
+    height: 35px;
+    color: #FFF;
+    background-color: #4c4c4c;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-top: auto;
+    padding-bottom: auto; }
+
+footer {
+  margin-top: 30px;
+  background-color: #c0542d;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF; }
+
+@media (max-width: 768px) {
+  .cover {
+    height: 400px;
+    width: 100%;
+    background-image: url(https://techacademy-webdesign-kaoriyotsui.c9users.io/responsive-site/images/cover_image.jpg);
+    background-size: cover;
+    background-position: center center; }
+    .cover .cover_image {
+      display: none; } }
+@media (max-width: 768px) {
+  .situaition {
+    flex-direction: column; }
+    .situaition .situaition_box {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+/*# sourceMappingURL=style.css.map */
